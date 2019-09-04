@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: $bg-second;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 110%;
+
+  & h1 {
+    display: none;
+  }
+
+  & h2 {
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1.3em;
+  }
+
+  & h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  & .primary-text {
+    margin: auto;
+    width: 100%;
+  }
+
+  & span {
+    &.color-one {
+      color: $first-color;
+    }
+
+    &.color-two {
+      color: $third-color;
+    }
+  }
+
+  & .bg-rect {
+    position: absolute;
+    top: -200px;
+    left: -110px;
+    width: 70vw;
+    height: 40vh;
+    transform: rotate(-20deg);
+    background: $bg-primary;
+  }
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 30px;
+  width: 100%;
+
+  &-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 40px;
+
+    &:hover {
+      cursor: pointer;
+      background: #f7f7f777;
+    }
+  }
+}
