@@ -1,3 +1,8 @@
+// fonts
+
+$primary-font: 'Oswald';
+$secondary-font: 'Inconsolata';
+
 // colors
 
 $primary-color: #4f4d4e;
@@ -33,6 +38,8 @@ a {
 
 @import './components/Menu/Menu.scss';
 @import './components/Header/Header.scss';
+@import './components/AboutMe/AboutMe.scss';
+@import './components/ArrowDown/Arrow.scss';
 
 @font-face {
   font-family: 'Inconsolata';

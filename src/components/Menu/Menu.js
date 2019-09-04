@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Link } from "react-scroll";
+
 const Menu = () => {
   const [addClass, setAddClass] = useState(false);
   const hamClasses = ['ham'];
@@ -28,10 +30,11 @@ const Menu = () => {
           d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
       </svg>
       <ul className={itemsClasses.join(' ')}>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><Link to="home" smooth={true}>Home</Link></li>
+        <li><Link to="about-me" smooth={true}>About me</Link></li>
+        <li><Link to="projects" >Projects</Link></li>
+        <li><Link to="skills" >Skills</Link></li>
+        <li><Link to="contacts" >Contacts</Link></li>
       </ul>
     </div>
   )

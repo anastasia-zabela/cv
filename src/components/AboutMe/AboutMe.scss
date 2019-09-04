@@ -1,0 +1,80 @@
+.about-me {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  font-family: 'Inconsolata', serif;
+  
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 80vh;
+    background-color: $bg-second;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: auto 65%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__text {
+    margin-right: 50px;
+
+    & h3 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &--paragr {
+      font-size: 20px;
+      margin: 20px 0;
+
+      & p {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  &__photo-field {
+    position: relative;
+
+    & .name {
+      position: absolute;
+      z-index: 2;
+      top: 100px;
+      right: -60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 150px;
+      height: 150px;
+      font-family: $primary-font, sans-serif;
+      font-size: 22px;
+      background: $bg-third;
+
+      &__line {
+        width: 80px;
+        height: 3px;
+        background: $primary-color;
+      }
+    }
+
+    & .line-rect {
+      position: absolute;
+      top: 160px;
+      left: 365px;
+      width: 260px;
+      height: 160px;
+    }
+  }
+
+  & img {
+    width: 500px;
+  }
+}

@@ -1,25 +1,25 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 import bgHeader from '../../assets/bg-header.jpg';
+import Arrow from '../ArrowDown/Arrow';
 
 const Header = () => {
   return (
-    <header className='header' style={{ backgroundImage: `url(${bgHeader})` }}>
+    <header id="home" className='header' style={{ backgroundImage: `url(${bgHeader})` }}>
       <h1>Anastasia Zabela</h1>
       <div className="bg-rect"></div>
       <div className="primary-text container">
         <h2>Hi</h2>
         <h2>I'm <span className="color-one">Anastasia</span></h2>
         <h2>Frontend web developer</h2>
-        <h3>scroll down or just <span className="color-two"><a>view my resume</a></span></h3>
+        <h3>scroll down or just <span className="color-two">
+            <a href="https://docs.google.com/document/d/1UhRjzni5qCAYrreoUmp0qnkurs3g8laCJb5ifwC-DQY/edit" target="_blank">
+              view my resume
+            </a>
+          </span>
+        </h3>
       </div>
-      <div className="arrow">
-        <div className="arrow-svg">
-          <FontAwesomeIcon icon={faChevronDown} size="3x" />
-        </div>
-      </div>
+      <Arrow linkTo={'about-me'} />
     </header>
   )
 }
