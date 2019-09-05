@@ -34,12 +34,14 @@ a {
 
 .container {
   max-width: 1140px;
+  margin: auto;
 }
 
 @import './components/Menu/Menu.scss';
 @import './components/Header/Header.scss';
 @import './components/AboutMe/AboutMe.scss';
 @import './components/ArrowDown/Arrow.scss';
+@import './components/Projects/Projects.scss';
 
 @font-face {
   font-family: 'Inconsolata';

@@ -8,7 +8,8 @@ const Arrow = ({ linkTo }) => {
     <div className="arrow">
       <Link className="arrow-svg" 
         to={linkTo}
-        smooth={true}>
+        smooth={true}
+        duration={500}>
         <FontAwesomeIcon icon={faChevronDown} size="3x" />
       </Link>
     </div>

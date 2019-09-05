@@ -1,0 +1,96 @@
+.projects {
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: $bg-first;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 65%;
+  }
+
+  &__content {
+    padding-bottom: 150px;
+  }
+
+  & h3 {
+    margin-bottom: 40px;
+    font-family: $secondary-font, serif;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.project-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  font-family: $secondary-font, serif;
+  background: white;
+
+  & img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  & h4 {
+    font-size: 24px;
+  }
+
+  & .description {
+    height: 150px;
+    width: 350px;
+    font-size: 18px;
+    line-height: 20px;
+
+    & p {
+      margin-bottom: 20px;
+
+      &:nth-child(1) {
+        font-weight: bold;
+      }
+    }
+
+    & .color-one {
+      font-weight: bold;
+      color: $first-color;
+    }
+  }
+
+  & .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    
+
+    & button {
+      width: 140px;
+      height: 35px;
+      font-family: $primary-font, serif;
+      font-size: 18px;
+      background: $second-color;
+      border: none;
+      border-radius: 25px;
+      color: $bg-primary;
+      outline: none;
+
+      &:nth-child(2) {
+        background: $third-color;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

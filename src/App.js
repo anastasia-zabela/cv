@@ -3,6 +3,7 @@ import React from 'react';
 import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Menu />
       <Header />
       <AboutMe />
+      <Projects />
     </div>
   );
 }
