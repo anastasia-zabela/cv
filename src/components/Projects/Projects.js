@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
 
-import bgProjects from '../../assets/bg-projects.jpg';
+import bgProjects from '../../assets/bg-project2.jpg';
 import Project from './Project';
 import projectText from './projects-info';
 import Arrow from '../ArrowDown/Arrow';
@@ -17,12 +17,15 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <div className="projects__bg" style={{ backgroundImage: `url(${bgProjects})` }}></div>
+      <div className="projects__bg"></div>
+      <div className="projects__bg-2">
+        <div style={{ backgroundImage: `url(${bgProjects})` }}></div>
+      </div>
       <div className="projects__content container">
         <h3>Projects</h3>
         <div className="projects__slider">
           <Slider {...sliderSettings}>
-            <Project {...projectText.project1} />
+            <Project {...projectText.project1}/>
             <Project {...projectText.project2}/>
             <Project {...projectText.project3}/>
             <Project {...projectText.project4}/>
