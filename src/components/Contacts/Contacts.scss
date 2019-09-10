@@ -1,0 +1,69 @@
+.contacts {
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30vw;
+    height: 100%;
+    background-color: $bg-second;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+
+    &-2 {
+      position: absolute;
+      z-index: -2;
+      top: 200px;
+      width: 120vh;
+      height: 50vh;
+      background-color: $bg-second;
+      transform: rotate(-98deg);
+    }
+  }
+
+  &__content {
+    width: 400px;
+    padding-left: 30vw;
+    font-family: $secondary-font;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  & h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  &-icons {
+    margin: 25px 0 25px 0;
+    
+    & a {
+      margin: 10px;
+      font-size: 40px;
+      transition: color 0.1s;
+
+      &.icon {
+        display: flex;
+        align-items: center;
+        margin: 10px auto;
+        width: 160px;
+      }
+
+      &:hover {
+        transition: color 0.1s;
+        color: $second-color;
+      }
+    }
+
+    & h5 {
+      margin-left: 20px;
+      font-family: $primary-font, sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+}
