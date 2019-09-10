@@ -10,8 +10,8 @@ const Project = ({ icon, title, description, environment, linkToApp, linkToGithu
         <p><span className="color-one">Environment:</span> {environment}</p>
       </div>
       <div className="buttons">
-        <button>Link to app</button>
-        <button>Link to github</button>
+        <button><a href={linkToApp} target="_blank" rel="noopener noreferrer">Link to app</a></button>
+        <button><a href={linkToGithub} target="_blank" rel="noopener noreferrer">Link to github</a></button>
       </div>
     </div>
   )

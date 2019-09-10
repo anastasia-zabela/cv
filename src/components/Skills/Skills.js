@@ -40,7 +40,8 @@ const Skills = () => {
             </div>
           </div>
           <div className="skills-block__secondary">
-            <p><span>And other tools:</span> Git, Webpack, Gatsby, Web-socket, Canvas API, Youtube API, Contentful CMS, Netlify, Google Firebase, Eslint, Photoshop</p>
+            <p><span>And other tools:</span> Git, Webpack, Babel, Gatsby, Web-socket, Canvas API, Youtube API, Material UI, Contentful CMS, 
+            Netlify, Google Firebase, Eslint, Photoshop</p>
           </div>
         </div>
       </div>

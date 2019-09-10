@@ -7,11 +7,13 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
+import ArrowUp from './components/ArrowUp/ArrowUp';
 
 function App() {
   return (
     <div className="App">
       <Menu />
+      <ArrowUp />
       <Header />
       <AboutMe />
       <Projects />
