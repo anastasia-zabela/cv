@@ -37,6 +37,10 @@
     &.color-two {
       color: $third-color;
       outline: none;
+
+      &:hover {
+        color: $first-color;
+      }
     }
   }
 

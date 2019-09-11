@@ -7,13 +7,12 @@ import {faReact} from '@fortawesome/free-brands-svg-icons';
 import {faBootstrap} from '@fortawesome/free-brands-svg-icons';
 
 import IconSkill from './SkillsIcon';
-import bgSkills from '../../assets/bg-skills.jpg';
 import Arrow from '../ArrowDown/Arrow';
 
 const Skills = () => {
   return (
     <section className="skills">
-      <div className="skills__bg" style={{ backgroundImage: `url(${bgSkills})`}}></div>
+      <div className="skills__bg" ></div>
       <div className="skills__bg-2"></div>
       <div className="skills__content container">
         <h3>Skills</h3>
@@ -40,7 +39,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="skills-block__secondary">
-            <p><span>And other tools:</span> Git, Webpack, Babel, Gatsby, Web-socket, Canvas API, Youtube API, Material UI, Contentful CMS, 
+            <p><span>And other tools:</span> Git, Webpack, Babel, Gatsby, Web-socket, SVG, Canvas API, Youtube API, Material UI, Contentful CMS, 
             Netlify, Google Firebase, Eslint, Photoshop</p>
           </div>
         </div>

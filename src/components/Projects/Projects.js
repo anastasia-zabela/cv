@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
 
-import bgProjects from '../../assets/bg-project2.jpg';
 import Project from './Project';
 import projectText from './projects-info';
 import Arrow from '../ArrowDown/Arrow';
@@ -19,7 +18,7 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="projects__bg"></div>
       <div className="projects__bg-2">
-        <div style={{ backgroundImage: `url(${bgProjects})` }}></div>
+        <div ></div>
       </div>
       <div className="projects__content container">
         <h3>Projects</h3>

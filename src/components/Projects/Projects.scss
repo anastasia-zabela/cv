@@ -43,10 +43,12 @@
   &__slider {
     & .slick-prev:before {
       font-size: 35px;
+      color: $primary-color;
     }
 
     & .slick-next:before{
       font-size: 35px;
+      color: $primary-color;
     }
   }
 
@@ -110,7 +112,7 @@
       width: 140px;
       height: 35px;
       font-family: $primary-font, serif;
-      font-size: 18px;
+      font-size: 20px;
       background: $second-color;
       border: none;
       border-radius: 25px;
@@ -129,8 +131,4 @@
       }
     }
   }
-}
-
-.slick-prev:before, .slick-next:before {
-  font-size: 35px;
 }

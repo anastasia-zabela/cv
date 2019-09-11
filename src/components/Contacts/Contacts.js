@@ -27,7 +27,7 @@ const Contacts = () => {
         <h3>Contacts</h3>
         <div className="contacts-block contacts-block-primary">
           <p className="description">
-            I’ll thanksful if you contact me by follow contacts
+            I’ll be grateful if you contact with me by the following contacts
           </p>
           <div className="contacts-icons">
             <a href={`mailto:${contacts.eMail}`}>
@@ -40,7 +40,7 @@ const Contacts = () => {
         </div>
         <div className="contacts-block contacts-block-secondary">
           <p className="description">
-            Also you can to stay connected
+            Also you can stay connected
           </p>
           <div className="contacts-icons">
             <a className="icon" href={contacts.instagram} target="_blank" rel="noopener noreferrer">
