@@ -4,13 +4,15 @@ import { Link } from "react-scroll";
 
 const Menu = () => {
   const [addClass, setAddClass] = useState(false);
-  const hamClasses = ['ham'];
+  const hamClasses = ['menu__ham'];
   const itemsClasses = ['menu__items'];
+  const bgClasses = ['menu__bg'];
   const animationScroll = {smooth: true, duration: 500};
 
   if (addClass) {
     hamClasses.push('active');
     itemsClasses.push('show-items');
+    bgClasses.push('active');
   }
 
   function handleClick() {
@@ -37,6 +39,7 @@ const Menu = () => {
         <li><Link to="skills" smooth={animationScroll.smooth} duration={animationScroll.duration}>Skills</Link></li>
         <li><Link to="contacts" smooth={animationScroll.smooth} duration={animationScroll.duration}>Contacts</Link></li>
       </ul>
+      <div className={bgClasses.join(' ')}></div>
     </div>
   )
 }

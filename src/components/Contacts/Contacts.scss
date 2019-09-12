@@ -3,6 +3,10 @@
   display: flex;
   height: 100vh;
 
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    background-color: $bg-second;
+  }
+
   &__bg {
     position: absolute;
     z-index: -1;
@@ -20,6 +24,11 @@
 
     @media screen and (max-width: 1024px) and (orientation: portrait) {
       width: 50vw;
+    }
+
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      z-index: inherit;
+      width: 35vw;
     }
 
     &-2 {
@@ -55,6 +64,10 @@
 
     @media screen and (max-width: 1024px) and (orientation: portrait) {
       width: 40vw;
+    }
+
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      width: 60vw;
     }
   }
 

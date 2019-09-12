@@ -26,6 +26,11 @@
         left: -15vh;
       }
 
+      @media screen and (max-width: 480px) and (orientation: portrait) {
+        left: -6vh;
+        bottom: 2vh;
+      }
+
       & div {
         position: absolute;
         bottom: -160px;
@@ -67,6 +72,10 @@
     font-family: $secondary-font, monospace;
     font-size: 3vh;
     text-align: center;
+
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      margin-top: 8vh;
+    }
   }
 }
 
@@ -90,6 +99,11 @@
 
   @media screen and (max-width: 1024px) and (orientation: portrait) {
     width: 60vw;
+  }
+
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    width: 70vw;
+    height: 70vh; 
   }
 
   & img {
@@ -126,6 +140,9 @@
     justify-content: space-between;
     width: 70%;
     
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      flex-direction: column;
+    }
 
     & button {
       width: 45%;
@@ -137,6 +154,11 @@
       color: $bg-primary;
       outline: none;
       transition: 0.5s;
+
+      @media screen and (max-width: 480px) and (orientation: portrait) {
+        width: 100%;
+        margin: 1vh 0;
+      }
 
       &:nth-child(2) {
         background: $third-color;

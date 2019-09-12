@@ -55,13 +55,14 @@
 
   & .primary-text {
     margin: auto;
-    width: 100%;
 
     @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+      width: 100%;
       padding-left: 15vw;
     }
 
     @media screen and (max-width: 1024px) and (orientation: portrait) {
+      width: 100%;
       padding: 5vh 0 5vh 15vw;
       background: $bg-primary;
     }

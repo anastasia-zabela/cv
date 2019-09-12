@@ -29,7 +29,7 @@ const ArrowUp = () => {
 
   return (
     <div className="arrow-up" style={style}>
-      <Link className="arrow-svg" 
+      <Link className="arrow-up-svg" 
         to='home'
         smooth={true}
         duration={500}>
