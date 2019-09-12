@@ -6,6 +6,8 @@ import Arrow from '../ArrowDown/Arrow';
 const Header = () => {
   return (
     <header id="home" className='header' style={{ backgroundImage: `url(${bgHeader})` }}>
+      <div className="header__bg" ></div>
+      <div className="header__bg-2"></div>
       <h1>Anastasia Zabela</h1>
       <div className="bg-rect"></div>
       <div className="primary-text container">

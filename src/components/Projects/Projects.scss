@@ -10,18 +10,21 @@
     width: 100%;
     height: 65vh;
     background-color: $bg-first;
-    
 
     &-2 {
       position: absolute;
       z-index: -1;
-      left: -44px;
-      bottom: 158px;
-      width: 120%;
+      left: -24vh;
+      bottom: 14vh;
+      width: 120vw;
       height: 50vh;
       background-color: $bg-first;
       transform: rotate(-8deg);
       overflow: hidden;
+
+      @media screen and (max-width: 1024px) and (orientation: portrait) {
+        left: -15vh;
+      }
 
       & div {
         position: absolute;
@@ -37,25 +40,32 @@
   }
 
   &__content {
-    padding-bottom: 150px;
+    padding-bottom: 14vh;
   }
 
   &__slider {
-    & .slick-prev:before {
-      font-size: 35px;
-      color: $primary-color;
+    %arrow {
+      width: 5vh;
+
+      &:before {
+        font-size: 4vh;
+        color: $primary-color;
+      }
     }
 
-    & .slick-next:before{
-      font-size: 35px;
-      color: $primary-color;
+    & .slick-prev {
+      @extend %arrow;
+    }
+      
+    & .slick-next {
+      @extend %arrow;
     }
   }
 
   & h3 {
-    margin-bottom: 40px;
-    font-family: $secondary-font, serif;
-    font-size: 30px;
+    margin-bottom: 4vh;
+    font-family: $secondary-font, monospace;
+    font-size: 3vh;
     text-align: center;
   }
 }
@@ -66,30 +76,39 @@
   justify-content: space-evenly;
   align-items: center;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 4vh;
   padding-bottom: 10px;
-  width: 500px;
-  height: 600px;
-  font-family: $secondary-font, serif;
+  width: 26vw;
+  height: 60vh;
+  font-family: $secondary-font, monospace;
   background: white;
 
+  @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    width: 40vw;
+    height: 70vh;
+  }
+
+  @media screen and (max-width: 1024px) and (orientation: portrait) {
+    width: 60vw;
+  }
+
   & img {
-    width: 300px;
+    width: 28vh;
     margin: 0 auto;
   }
 
   & h4 {
-    font-size: 24px;
+    font-size: 2.6vh;
   }
 
   & .description {
-    height: 150px;
-    width: 350px;
-    font-size: 18px;
-    line-height: 20px;
+    height: 25%;
+    width: 70%;
+    font-size: 1.9vh;
+    line-height: 2.2vh;
 
     & p {
-      margin-bottom: 20px;
+      margin-bottom: 2vh;
 
       &:nth-child(1) {
         font-weight: bold;
@@ -105,14 +124,13 @@
   & .buttons {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 70%;
     
 
     & button {
-      width: 140px;
-      height: 35px;
-      font-family: $primary-font, serif;
-      font-size: 20px;
+      width: 45%;
+      font-family: $primary-font, sans-serif;
+      font-size: 2.2vh;
       background: $second-color;
       border: none;
       border-radius: 25px;

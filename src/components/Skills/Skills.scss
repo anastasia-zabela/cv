@@ -17,8 +17,8 @@
     &-2 {
       position: absolute;
       z-index: -2;
-      bottom: 150px;
-      width: 120%;
+      bottom: 16vh;
+      width: 120vw;
       height: 50vh;
       background-color: $bg-third;
       transform: rotate(-8deg);
@@ -29,21 +29,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 275px;
+    padding-bottom: 30vh;
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      padding: 0;
+    }
   }
 
   & h3 {
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
     font-family: $secondary-font, monospace;
-    font-size: 30px;
+    font-size: 3vh;
     text-align: center;
   }
 
   & .description {
-    margin-bottom: 30px;
-    width: 600px;
+    margin-bottom: 3vh;
+    width: 30vw;
     font-family: $secondary-font, monospace;
-    font-size: 20px;
+    font-size: 2vh;
+    line-height: 3vh;
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+      width: 45vw;
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      width: 100%;
+    }
   }
 
   & .skills-block {
@@ -51,39 +64,63 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 1000px;
-    font-size: 24px;
+    width: 60vw;
+    font-size: 2.4vh;
     background: white;
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+      width: 80vw;
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      width: 100%;
+      padding: 0 2vh;
+    }
 
     &__primary {
       display: flex;
-      margin: 20px 0;
+      margin: 3vh 0;
       height: 50%;
       width: 100%;
       text-align: center;
 
-      &-1 {
+      @media screen and (max-width: 1024px) and (orientation: portrait) {
+        flex-direction: column;
+        margin-top: 1vh;
+      }
+
+      @mixin column($color) {
         width: 50%;
+
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+          width: 100%;
+          margin-top: 2vh;
+        }
           
         & h4 {
-          color: $first-color;
-          margin-bottom: 20px;
+          color: $color;
+          margin-bottom: 2vh;
         }
       }
 
+      &-1 {
+        @include column($first-color);
+      }
+
       &-2 {
-        width: 50%;
-          
-        & h4 {
-          color: $second-color;
-          margin-bottom: 20px;
-        }
+        @include column($second-color);
       }
     }
 
     &__secondary {
       width: 50%;
-      margin: 20px 0;
+      margin: 2vh 0;
+
+      @media screen and (max-width: 1024px) and (orientation: portrait) {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 2vh;
+      }
 
       & span {
         font-weight: bold;
@@ -100,8 +137,8 @@
 
     & .skill-icon {
       margin: 0 8px;
-      width: 80px;
-      font-size: 20px;
+      width: 8vh;
+      font-size: 2vh;
     }
   }
 }

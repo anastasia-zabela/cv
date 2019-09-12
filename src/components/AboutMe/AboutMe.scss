@@ -12,25 +12,39 @@
     background-color: $bg-second;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: auto 65%;
+    background-size: auto 25vw;
   }
 
   &__content {
     display: flex;
     align-items: center;
     margin: auto;
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+      align-items: flex-start;
+      max-width: 75vw;
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      flex-direction: column;
+    }
   }
 
   &__text {
     margin-right: 50px;
 
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      margin-bottom: 1vh;
+      margin-right: 0;
+    }
+
     & h3 {
-      font-size: 30px;
+      font-size: 3vh;
       text-align: center;
     }
 
     &--paragr {
-      font-size: 20px;
+      font-size: 2vh;
       margin: 20px 0;
 
       & p {
@@ -42,39 +56,65 @@
   &__photo-field {
     position: relative;
 
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      margin-bottom: 3vh;
+    }
+
     & .name {
       position: absolute;
       z-index: 2;
-      top: 100px;
-      right: -60px;
+      top: 12vh;
+      right: -6vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       padding: 0 20px;
       box-sizing: border-box;
-      width: 150px;
-      height: 150px;
+      width: 16vh;
+      height: 16vh;
       font-family: $primary-font, sans-serif;
-      font-size: 22px;
+      font-size: 2.4vh;
       background: $bg-third;
 
+      @media screen and (max-width: 1024px) and (orientation: portrait) {
+        top: 7vh;
+        width: 12vh;
+        height: 12vh;
+        font-size: 2vh;
+      }
+
       &__line {
-        width: 80px;
-        height: 3px;
+        width: 8vh;
+        height: 0.3vh;
         background: $primary-color;
+
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+          width: 6vh;
+        }
       }
     }
 
     & .line-rect {
       position: absolute;
-      top: 160px;
-      left: 365px;
-      width: 260px;
-      height: 160px;
+      top: 18vh;
+      left: 38vh;
+      width: 28vh;
+      height: 16vh;
+
+      @media screen and (max-width: 1024px) and (orientation: portrait) {
+        top: 12vh;
+        left: 23vh;
+        width: 21vh;
+        height: 12vh;
+      }
     }
   }
 
   & img {
-    width: 500px;
+    width: 52vh;
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      width: 32vh;
+    }
   }
 }

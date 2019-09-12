@@ -3,30 +3,68 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  background-color: $bg-second;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto 110%;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: $bg-second;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 80%;
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      height: 100vh;
+    }
+
+    &-2 {
+      position: absolute;
+      z-index: -2;
+      top: 2vw;
+      width: 100vw;
+      height: 50vh;
+      background-color: $bg-second;
+      transform: rotate(-20deg);
+
+      @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+        top: 14vh;
+      }
+    }
+  }
 
   & h1 {
     display: none;
   }
 
   & h2 {
-    font-size: 60px;
+    font-size: 5vh;
     font-weight: normal;
-    line-height: 1.3em;
+    line-height: 6vh;
   }
 
   & h3 {
-    margin-top: 20px;
-    font-size: 30px;
+    margin-top: 2vh;
+    font-size: 3vh;
     font-weight: normal;
   }
 
   & .primary-text {
     margin: auto;
     width: 100%;
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+      padding-left: 15vw;
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+      padding: 5vh 0 5vh 15vw;
+      background: $bg-primary;
+    }
   }
 
   & span {
@@ -46,9 +84,10 @@
 
   & .bg-rect {
     position: absolute;
-    top: -200px;
-    left: -110px;
-    width: 70vw;
+    display: none;
+    top: -310px;
+    left: -150px;
+    width: 100vw;
     height: 40vh;
     transform: rotate(-20deg);
     background: $bg-primary;

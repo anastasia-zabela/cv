@@ -1,23 +1,27 @@
 .menu {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 2vh;
+  left: 2vh;
   z-index: 10;
 }
 
 .menu__items {
   margin: 0;
-  margin-left: 20px;
+  margin-left: 2vw;
   padding: 0;
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  line-height: 2em;
+  font-size: 2vh;
+  line-height: 4vh;
   text-transform: uppercase;
   
   & li {
     list-style: none;
-    transform: translateX(-120px);
+    transform: translateX(-14vh);
     transition: transform 0.5s;
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+      transform: translateX(-20vh);
+    }
     
     &:hover {
       cursor: pointer;

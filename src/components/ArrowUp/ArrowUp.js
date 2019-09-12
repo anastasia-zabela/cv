@@ -14,7 +14,7 @@ const ArrowUp = () => {
       setScrollDown(false);
     }
 
-    if (window.pageYOffset >= document.documentElement.scrollHeight - document.documentElement.clientHeight - 50) {
+    if (window.pageYOffset >= document.documentElement.scrollHeight - document.documentElement.clientHeight - 100) {
       setBottomPage(true);
     } else {
       setBottomPage(false);
