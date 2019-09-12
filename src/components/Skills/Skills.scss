@@ -3,6 +3,10 @@
   display: flex;
   height: 100vh;
 
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    height: 100%;
+  }
+
   &__bg {
     position: absolute;
     z-index: -1;
@@ -41,6 +45,11 @@
     font-family: $secondary-font, monospace;
     font-size: 3vh;
     text-align: center;
+
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      margin-top: 10vh;
+      font-size: 4vh;
+    }
   }
 
   & .description {
@@ -79,6 +88,11 @@
     @media screen and (max-width: 1024px) and (orientation: portrait) {
       width: 100%;
       padding: 0 2vh;
+    }
+
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      margin-bottom: 6vh;
+      font-size: 2.8vh;
     }
 
     &__primary {
@@ -143,6 +157,10 @@
       margin: 0 8px;
       width: 8vh;
       font-size: 2vh;
+
+      @media screen and (max-width: 480px) and (orientation: portrait) {
+        font-size: 2.2vh;
+      }
     }
   }
 }

@@ -9,6 +9,10 @@
     left: 1vh;
   }
 
+  &-contain {
+    position: relative;
+  }
+
   &__items {
     margin: 0;
     margin-left: 1vw;
@@ -36,9 +40,12 @@
       @media screen and (max-width: 480px) and (orientation: portrait) {
         transform: translate(-20vh);
       }
+
+      
       
       &:hover {
         cursor: pointer;
+        color: $first-color;
       }
     }
 
@@ -96,6 +103,30 @@
       
       & .bottom {
         stroke-dashoffset: -138px;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: -4vh;
+    left: -4vh;
+    z-index: -1;
+    width: 25vh;
+    height: 25vh;
+    background: $bg-primary;
+    transition: 0.5s ease-out;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+
+    &.active {
+      width: 40vh;
+      height: 60vh;
+      opacity: 0.9;
+      transition: 0.5s cubic-bezier(0.31, 0.68, 0.54, 1.44);
+
+      @media screen and (max-width: 480px) and (orientation: portrait) {
+        width: 45vh;
+        height: 75vh;
       }
     }
   }

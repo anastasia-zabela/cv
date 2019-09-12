@@ -8,13 +8,15 @@ import Arrow from '../ArrowDown/Arrow';
 const Projects = () => {
   const sliderSettings = {
     dots: true,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
     speed: 300,
+    autoplaySpeed: 3000,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
