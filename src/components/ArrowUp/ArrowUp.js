@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronCircleUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-scroll";
 
 const ArrowUp = () => {
@@ -33,7 +33,7 @@ const ArrowUp = () => {
         to='home'
         smooth={true}
         duration={500}>
-        <FontAwesomeIcon icon={faChevronCircleUp} size="3x" />
+        <FontAwesomeIcon icon={faChevronUp} size="3x" />
       </Link>
     </div>
   )
