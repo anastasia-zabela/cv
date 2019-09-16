@@ -9,16 +9,16 @@ const projectsText = {
     title: '#1 Piskel clone',
     description: `Simplified clone of the piskelapp.com, the web-app for spriting and pixel art`,
     environment: 'core JS, sass, canvas API, fullscreen API, jest, gif.js, jest, webpack, eslint',
-    linkToApp: 'https://anastasia-zabela.github.io/piskel-clone/',
-    linkToGithub: 'https://github.com/anastasia-zabela/culture-portal-codejam'
+    linkToApp: 'https://piskel-clone.netlify.com/',
+    linkToGithub: 'https://github.com/anastasia-zabela/piskel-clone'
   },
   project2: {
     icon: youtubeIcon,
     title: '#2 Youtube client',
     description: 'Web app to view the information about youtube clips on user request',
     environment: 'core JS, youtube API requests, jest, css animation, responsive design',
-    linkToApp: 'https://anastasia-zabela.github.io/youtube-client/',
-    linkToGithub: 'https://github.com/anastasia-zabela/culture-portal-codejam'
+    linkToApp: 'https://rss-youtube-client.netlify.com/',
+    linkToGithub: 'https://github.com/anastasia-zabela/youtube-client'
   },
 
   project3: {
@@ -37,7 +37,7 @@ const projectsText = {
     description: 'UI for chat, based on websocket connection',
     environment: 'react, websocket server, notification API',
     linkToApp: 'https://rss-chat-socket.firebaseapp.com/',
-    linkToGithub: 'https://github.com/anastasia-zabela/culture-portal-codejam'
+    linkToGithub: 'https://github.com/anastasia-zabela/group-chat.git'
   }
 }
 

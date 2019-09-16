@@ -6,7 +6,7 @@ import {faGithubSquare} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faFileAlt} from '@fortawesome/free-regular-svg-icons';
 
-import bgContacts from '../../assets/bg-contacts.jpg';
+import bgContacts from '../../assets/bg-contacts-2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contacts = () => {
