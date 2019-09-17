@@ -16,7 +16,7 @@ const projectsText = {
     icon: youtubeIcon,
     title: '#2 Youtube client',
     description: 'Web app to view the information about youtube clips on user request',
-    environment: 'core JS, youtube API requests, jest, css animation, responsive design',
+    environment: 'jQuery, youtube API requests, jest, css animation, responsive design',
     linkToApp: 'https://rss-youtube-client.netlify.com/',
     linkToGithub: 'https://github.com/anastasia-zabela/youtube-client'
   },

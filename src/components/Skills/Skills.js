@@ -8,6 +8,9 @@ import {faBootstrap} from '@fortawesome/free-brands-svg-icons';
 
 import IconSkill from './SkillsIcon';
 import Arrow from '../ArrowDown/Arrow';
+import jqueryIcon from '@iconify/icons-raphael/jquery';
+import gatsbyIcon from '@iconify/icons-simple-icons/gatsby';
+import materialUi from '@iconify/icons-mdi/material-ui';
 
 const Skills = () => {
   return (
@@ -34,12 +37,15 @@ const Skills = () => {
             <h4>Frameworks and libraries</h4>
               <div className="skill-icons">
                 <IconSkill icon={faReact} title={'React'} />
+                <IconSkill src={jqueryIcon} title={'jQuery'} />
+                <IconSkill src={gatsbyIcon} title={'Gatsby'} />
                 <IconSkill icon={faBootstrap} title={'Bootstrap'} />
+                <IconSkill src={materialUi} title={'Material UI'} />
               </div>
             </div>
           </div>
           <div className="skills-block__secondary">
-            <p><span>And other tools:</span> Git, Webpack, Babel, Gatsby, Web-socket, SVG, Canvas API, Youtube API, Material UI, Contentful CMS, 
+            <p><span>And other tools:</span> Git, Webpack, Babel, Web-socket, SVG, Canvas API, Youtube API, Contentful CMS, 
             Netlify, Google Firebase, Eslint, Photoshop</p>
           </div>
         </div>
