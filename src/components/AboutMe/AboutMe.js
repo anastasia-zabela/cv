@@ -13,14 +13,15 @@ const AboutMe = () => {
         <div className="about-me__text">
           <h3>About me</h3>
           <div className="about-me__text--paragr">
-            <p>I was born in siberian russian city Omsk and I moved in Minsk about one year ago.</p>
+            <p>I was born in the Siberian city of Omsk, lived in Minsk for about a year and a half, and now I live in the amazing 
+              city of St. Petersburg. </p>
             <p>I very like to read programming and coding topics, and I very enjoy 
-            to be involved in the learning process. I don't have a lot of experience in coding of serious projects, but I have a 
-            big passion to learn and ready to work hard to get the best coding skills.</p>
+              to be involved in the learning process. I don't have a lot of experience in coding of serious projects, but I have a 
+              big passion to learn and ready to work hard to get the best coding skills.</p>
             <p>Currently, I finished Rolling Scopes School courses lasting half a year. I have a few projects which I have been made 
-            during my learning process.</p>
+              during my learning process.</p>
             <p>Drawing and photography is my hobby. Also, I know how to work with Adobe tools and have been working with it for about 
-            six years. I'm sure design and programming together can do cool things.</p>
+              six years. I'm sure design and programming together can do cool things.</p>
           </div>
         </div>
         <div className="about-me__photo-field">
